@@ -19,7 +19,8 @@ def parseXML(xmlfile):
     
     output =[]
 
-    for i in  root.findall('./'):
+    
+    for i in  root.findall('./'): # edit this line to include the root and the first node of the file 
 
         output.append(i.attrib)
 
